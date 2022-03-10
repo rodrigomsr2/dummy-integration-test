@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
+    sql-script-encoding: UTF-8
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    #hibernate:     # ddl-auto: create-drop
+  h2:
+    console.enabled: true
+    console.path: /h2-console
+    console.settings.trace: false 
+    spring.h2.console.settings.web-allow-others: false
+    
